@@ -1,0 +1,96 @@
+[01:39:46] [Client thread/INFO]: Setting user: Player707
+[01:39:54] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:39:57] [Client thread/INFO]: [STDOUT]: ---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 3/21/17 1:39 AM
+Description: Loading screen debug info
+
+This is just a prompt for computer specs to be printed. THIS IS NOT A ERROR
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_121, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 219744024 bytes (209 MB) / 504889344 bytes (481 MB) up to 3814195200 bytes (3637 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.5.14008 Compatibility Profile Context 21.19.137.514' Renderer: 'AMD Radeon HD 7900 Series'
+[01:40:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Example Mod
+[01:40:20] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:40:21] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[01:40:21] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:40:21] [Thread-7/INFO]: OpenAL initialized.
+[01:40:21] [Sound Library Loader/INFO]: Sound engine started
+[01:40:44] [Client thread/INFO]: Created: 16x16 textures-atlas
+[01:40:46] [Client thread/INFO]: [STDOUT]: DIRT BLOCK >> tile.dirt
+[01:40:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Example Mod
+[01:41:04] [Client thread/INFO]: SoundSystem shutting down...
+[01:41:05] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:41:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:41:05] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[01:41:05] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:41:05] [Thread-9/INFO]: OpenAL initialized.
+[01:41:05] [Sound Library Loader/INFO]: Sound engine started
+[01:41:29] [Client thread/INFO]: Created: 512x512 textures-atlas
+[01:41:33] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[01:42:23] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[01:42:23] [Server thread/INFO]: Generating keypair
+[01:42:26] [Server thread/INFO]: Preparing start region for level 0
+[01:42:27] [Server thread/INFO]: Changing view distance to 12, from 10
+[01:42:29] [Server thread/INFO]: Player707[local:E:4cbf75a8] logged in with entity id 0 at (-196.5, 4.0, -375.5)
+[01:42:29] [Server thread/INFO]: Player707 joined the game
+[01:42:32] [Server thread/INFO]: Saving and pausing game...
+[01:42:32] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[01:42:32] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@25f8cbb7[id=6ef60f0d-ee89-3acd-9711-6e64aaf89fef,name=Player707,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3056) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_121]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_121]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_121]
+[01:42:33] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[01:42:33] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[01:42:34] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2596ms behind, skipping 51 tick(s)
+[01:42:37] [Server thread/INFO]: Player707 has just earned the achievement [Taking Inventory]
+[01:42:37] [Client thread/INFO]: [CHAT] Player707 has just earned the achievement [Taking Inventory]
+[01:42:43] [Server thread/INFO]: Saving and pausing game...
+[01:42:43] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[01:42:43] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[01:42:43] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[01:43:08] [Server thread/INFO]: Saving and pausing game...
+[01:43:08] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[01:43:08] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[01:43:08] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[01:48:25] [Client thread/INFO]: Stopping!
+[01:48:25] [Server thread/INFO]: Stopping server
+[01:48:25] [Server thread/INFO]: Saving players
+[01:48:25] [Server thread/INFO]: Saving worlds
+[01:48:25] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[01:48:25] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[01:48:25] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[01:48:25] [Client thread/INFO]: SoundSystem shutting down...
+[01:48:26] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
